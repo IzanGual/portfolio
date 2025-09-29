@@ -10,7 +10,7 @@ export default function MainPage() {
   </div>
 
   <div className="lg">
-    <h2>BLOQUE 2 Cambio de tema 1 cuadro</h2>
+    
     <ThemeSwitcher />
   </div>
 

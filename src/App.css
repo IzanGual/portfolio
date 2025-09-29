@@ -46,6 +46,14 @@ body {
   
 }
 
+body.theme-initializing .switcher,
+body.theme-initializing .switcher *,
+body.theme-initializing .switcher::after,
+body.theme-initializing .switcher__option,
+body.theme-initializing .switcher__icon {
+  transition: none !important;
+  animation: none !important;
+}
 
 
 
@@ -69,6 +77,11 @@ body.theme-dark {
 
 /* Clase reutilizable para aplicar efecto Liquid Glass */
 .lg {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-color: color-mix(in srgb, var(--c-glass) 10%, transparent);
   backdrop-filter: blur(12px) saturate(var(--saturation));
