@@ -1,5 +1,6 @@
 import "./MainPage.css";
 import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
+import DownloadCV from "../../components/DownloadCV/DownloadCV";
 
 export default function MainPage() {
   return (
@@ -22,9 +23,9 @@ export default function MainPage() {
     <h2>BLOQUE 4 Conocimientos 1 cuadro</h2>
   </div>
 
-  <div className="lg">
-    <h2>BLOQUE 5 Descarga CV</h2>
-  </div>
+  <a className="lg clickable" href="/files/CV_IzanGualMartínez_ES.pdf" download>
+    <DownloadCV />
+  </a>
 
   <div className="lg">
     <h2>BLOQUE 6 Proyectos 2 cuadro</h2>

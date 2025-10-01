@@ -75,6 +75,12 @@ body.theme-dark {
   background-image: url('/imgs/darkW.webp')!important;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+  display: inline;
+}
+
 /* Clase reutilizable para aplicar efecto Liquid Glass */
 .lg {
 
@@ -132,6 +138,16 @@ body.theme-dark {
     0 4px 12px rgba(0,0,0,0.08),
     0 8px 24px rgba(0,0,0,0.06);
   transform: translateZ(0); /* ayuda a que la GPU renderice suavemente */
+}
+
+/* Hace al elemento clicable y hoverable */
+.clickable {
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.clickable:hover {
+  transform: scale(1.05);
 }
 
 
