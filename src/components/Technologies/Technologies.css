@@ -1,0 +1,31 @@
+:root {
+  --icon-primary: #E44D26;   /* naranja oscuro HTML5 */
+  --icon-secondary: #F16529; /* naranja claro */
+  --icon-tertiary: #EBEBEB;  /* gris */
+  --icon-light: #ffffff;     /* blanco */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-primary: #ffffff;   /* blanco */
+    --icon-secondary: #cccccc; /* gris claro */
+    --icon-tertiary: #777777;  /* gris oscuro */
+    --icon-light: #000000;     /* negro */
+  }
+}
+
+/* Reemplazo de :has -> clases en body */
+body.theme-dark {
+  :root {
+    --icon-primary: #ffffff;   /* blanco */
+    --icon-secondary: #cccccc; /* gris claro */
+    --icon-tertiary: #777777;  /* gris oscuro */
+    --icon-light: #000000;     /* negro */
+  }
+}
+
+svg {
+  width: 64px;
+  height: 64px;
+  display: block;
+}
